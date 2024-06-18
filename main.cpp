@@ -1,16 +1,9 @@
 #include <iostream>
 
-using namespace std;
-
 int main() {
-    int a = 1;
-    int b = 2;
-    int temp = a;
-
-    a = b;
-    b = temp;
-
-    cout <<a;
-
+    int file_size; // Snake Case
+    int FileSize; // PascalCase - for naming classes
+    int fileSize; // CamelCase - for naming variables and constants
+    int iFileSize; // Hungarian Notation
     return 0;
 }
