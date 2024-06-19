@@ -4,10 +4,10 @@
 using namespace std;
 
 int main() {
-    double price = 99.99;
-    float interestRate = 3.67f;
-    long fileSize = 90000L;
-    char letter = 'a';
-    bool isValid = false;
+    /* since we are using a brace initialiser, it will not compile the incorrect data associated to the wrong data type
+     *normal initialiser is '=' where we would assign a integer variable like int number = 1.2;
+     */
+    int number {1.2};
+    cout << number;
     return 0;
 }
