@@ -1,10 +1,13 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
 int main() {
-    int number = 1'000'000;
-    short another = number;
-    cout << another;
+    long elapsedSeconds = time(0); // Jan 1 1970
+    srand(elapsedSeconds);
+    int number = rand() % 10;
+    cout << number;
     return 0;
 }
