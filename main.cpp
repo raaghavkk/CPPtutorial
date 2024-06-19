@@ -1,12 +1,13 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main() {
-    cout << "Enter Fahrenheit temperature: " << endl;
-    double f;
-    cin >> f;
-    double c = (f - 32) / 1.8;
-    cout << "The Temperature in degrees celsius is: " << c;
-    return 0;
+    const double pi = 3.14;
+    cout << "Insert radius of circle: ";
+    double r;
+    cin >> r;
+    double area = pi * pow(r,2);
+    cout << "Area of circle = " << area;
 }
