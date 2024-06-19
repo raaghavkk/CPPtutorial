@@ -4,10 +4,10 @@
 using namespace std;
 
 int main() {
-    const double pi = 3.14;
-    cout << "Insert radius of circle: ";
-    double r;
-    cin >> r;
-    double area = pi * pow(r,2);
-    cout << "Area of circle = " << area;
+    double price = 99.99;
+    float interestRate = 3.67f;
+    long fileSize = 90000L;
+    char letter = 'a';
+    bool isValid = false;
+    return 0;
 }
