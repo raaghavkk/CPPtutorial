@@ -3,12 +3,19 @@
 using namespace std;
 
 int main() {
-    int x = 10;
-    int y = 20;
-    int z = 5;
-    // we can simplify the previous code even more by using namespace std so we don't have to call all std objects anywhere in the code
-    cout << "x = " << x << endl
-         << "y = " << y << endl
-         << "z = " << z << endl;
+    double sales = 95000;
+    cout << "Sales: $" << sales << endl;
+
+    const double stateTaxRate = 0.04;
+    double stateTax = sales * stateTaxRate;
+    cout << "State Tax: $" << stateTax << endl;
+
+    const double countyTaxRate = 0.02;
+    double countyTax = sales * countyTaxRate;
+    cout << "County Tax: $" << countyTax << endl;
+
+    double totalTax = stateTax + countyTax;
+    cout << "Total Tax: $" << totalTax;
+
     return 0;
 }
